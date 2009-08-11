@@ -1,0 +1,6 @@
+PROTOCOLS:
+	* NbdtStar_Rainbow, the lookup is based on the gp's idea
+	* NbdtStar_QuickWayDown, the lookup is based on the finger and each peer uses all its children
+	* NbdtStar, the lookup is based on the finger like search (pure, no modification)
+	* Dummy, creates a chain of peers, only lookup is supported (demonstration purpose)
+

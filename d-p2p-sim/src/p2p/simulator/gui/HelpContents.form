@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
+        <CompoundBorder>
+          <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true">
+              <Color PropertyName="color" blue="bf" green="82" id="TabbedPane.borderHightlightColor" palette="3" red="63" type="palette"/>
+            </LineBorder>
+          </Border>
+          <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2">
+              <Color PropertyName="color" blue="f2" green="dd" id="TabbedPane.contentAreaColor" palette="3" red="c8" type="palette"/>
+            </LineBorder>
+          </Border>
+        </CompoundBorder>
+      </Border>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[510, 464]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+                      <Component id="jScrollPane2" pref="468" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="432" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane2" pref="413" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Simulator"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ee" green="ee" id="Panel.background" palette="3" red="ee" type="palette"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="String[] initString2 =&#xa;        {  &quot;We implemented a simulation system in Java to evaluate the performance of various p2p protocols. &quot; +&#xa;          &quot;The basic architecture of the P2P simulator is based on a distributed, multi-threading,&quot; +&#xa;          &quot; asynchronous, message passing environment. The peers exchange messages to build the&quot; +&#xa;          &quot; overlay network and carry out search, insert/delete as well as join/leave operations.&quot; +&#xa;          &quot; In our simulator, each peer is a thread executable task that can run independently.&quot; +&#xa;          &quot; Every time a message is sent, a thread is assigned to the message&apos;s destination peer&quot; +&#xa;          &quot; to serve that particular message. In order to avoid the thread creation overhead, thread&quot; +&#xa;          &quot; competition, locking problems and etc, a thread pool with tunable number of threads is maintained.&quot; +&#xa;          &quot; Furthermore, the simulator&apos;s ability to run over a grid adds even more realism to our&quot; +&#xa;          &quot; experimental environment and overcomes the memory limitations.\n &quot; +&#xa;          &quot;The simulator has an unbiased and protocol independent mechanism to collect performance data.&quot; +&#xa;          &quot; This mechanism is based on the observation and the filtering of special fields in the message.&quot; +&#xa;          &quot; These fields are controlled by the simulator and are totally unaccessible from the protocol&apos;s processes.&quot; +&#xa;          &quot; This alternative way to collect performance data, in conjunction with the realistic execution environment&quot; +&#xa;          &quot; yields to more accurate results.&quot;+&#xa;            &quot;For more details visit the following address: &quot;,&#xa;            &quot;http://students.ceid.upatras.gr/~papalukg&quot;&#xa;        };&#xa;&#xa;        String[] initStyles2 =&#xa;        { &quot;regular&quot;, &quot;mail&quot;&#xa;        };&#xa;&#xa;        //JTextPane textPane = new JTextPane();&#xa;        StyledDocument doc2  = jTextPane2.getStyledDocument();&#xa;        addStylesToDocument(doc2);&#xa;&#xa;        try {&#xa;            for (int i=0; i &lt; initString2.length; i++) {&#xa;                doc2.insertString(doc2.getLength(), initString2[i],&#xa;                    doc2.getStyle(initStyles2[i]));&#xa;            }&#xa;        } catch (BadLocationException ble) {&#xa;            System.err.println(&quot;Couldn&apos;t insert initial text into text pane.&quot;);&#xa;        }"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

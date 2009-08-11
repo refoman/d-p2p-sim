@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<batchSimulation>
+    <simulation>
+        <protocolPackage>NbdtStar_QuickWayDown.jar</protocolPackage>
+        <overlayPeers>10000</overlayPeers>
+        <overlayKeys>2120000</overlayKeys>
+        <lookupQueries>10000</lookupQueries>
+        <lookupDistribution>UNIF</lookupDistribution>
+        <insertQueries>10000</insertQueries>
+        <insertDistribution>BETA</insertDistribution>
+        <deleteQueries>10000</deleteQueries>
+        <deleteDistribution>POWL</deleteDistribution>
+        <reportName>NbdtStar_QuickWayDown_scn1</reportName>
+    </simulation>
+</batchSimulation>

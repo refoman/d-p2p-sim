@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <cluster>
+        <appNodeId>1</appNodeId>
+        <appNode>
+            <id>1</id>
+            <percent>100</percent>
+            <ip>150.140.9.53</ip>
+        </appNode>        
+        <!--appNode>
+            <id>2</id>
+            <percent>30</percent>
+            <ip>150.140.142.18</ip>
+        </appNode>
+        <appNode>
+            <id>3</id>
+            <percent>35</percent>
+            <ip>150.140.142.17</ip>
+        </appNode-->
+    </cluster>
+    <distribution>
+        <random>
+            <seed>1</seed>
+        </random>
+        <beta>
+            <alpha>2.0</alpha>
+            <beta>4.0</beta>
+        </beta>
+        <powerLaw>
+            <alpha>0.5</alpha>
+            <beta>1.0</beta>
+        </powerLaw>
+    </distribution>
+    <misc>
+        <inputFile>NbdtStar_QuickWayDown-simulation.xml</inputFile>
+        <threadPoolSize>4</threadPoolSize>
+        <debugLevel>SEVERE</debugLevel>
+        <logFile>d-p2p-sim.log</logFile>
+        <protocolsDir>/home/gp/hg/d-p2p-sim/protocols/</protocolsDir>
+        <reportsDir>/home/gp/hg/d-p2p-sim/reports/</reportsDir>
+    </misc>
+</configuration>
